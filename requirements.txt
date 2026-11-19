@@ -1,0 +1,14 @@
+# Main notebook (ASD_Classification.ipynb)
+torch>=2.0
+torchvision>=0.15
+scikit-learn>=1.2
+pandas>=1.5
+numpy>=1.23
+matplotlib>=3.6
+seaborn>=0.12
+pillow>=9.0
+jupyter
+
+# Only needed for the notebooks in archive/
+# transformers>=4.30
+# torchmetrics>=1.0
