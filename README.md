@@ -78,10 +78,3 @@ Best results reported in the [paper](https://doi.org/10.21107/kursor.v13i3.468):
 | Scanpath images | Vision Transformer (ViT) | 78.2% | 88.6% |
 
 See the paper for the full comparison of all models. Outputs saved in the notebook come from a later re-run and may differ slightly from the published numbers.
-
-## Notes and future work
-
-- **Participant-level splitting.** Images are currently split one image at a time. Each participant has several images, so the same child can appear in both train and test sets. A participant-level split (e.g. `StratifiedGroupKFold`) would give a stricter estimate.
-- **Small sample size.** The dataset has 59 participants, so the tabular test split is small. Reporting cross-validated mean ± std would make comparisons more robust.
-- **Threshold tuning.** The "best threshold" metrics in the notebook are chosen on the test set. A separate validation split would avoid optimistic estimates.
-- The 3-class ASD-level experiment (`archive/`) did not separate the levels: it predicts the majority class.
